@@ -48,6 +48,7 @@ import { LoginComponent } from './login/login.component';
       { path: 'order-success', component: OrderSuccessComponent },
       { path: 'admin/products', component: AdminProductsComponent },
       { path: 'admin/orders', component: AdminOrdersComponent },
+      { path: 'login', component: LoginComponent}
     ])
   ],
   providers: [],
