@@ -1,3 +1,4 @@
+import { AdminModule } from './admin/admin.module';
 import { SharedModule } from './shared/shared.module';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -39,15 +40,13 @@ import { ShoppingCartComponent } from './shopping/components/shopping-cart/shopp
     CheckOutComponent,
     OrderSuccessComponent,
     MyOrdersComponent,
-    AdminProductsComponent,
-    AdminOrdersComponent,
     LoginComponent,
-    ProductFormComponent,
     ProductFilterComponent,
     ShoppingCartSummaryComponent,
     ShippingFormComponent
   ],
   imports: [
+    AdminModule,
     SharedModule,
     BrowserModule,
     FormsModule,
@@ -89,9 +88,7 @@ import { ShoppingCartComponent } from './shopping/components/shopping-cart/shopp
       }
     ])
   ],
-  providers: [
-    AdminAuthGuard
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
